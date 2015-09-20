@@ -11,8 +11,8 @@ int main() {
 	inputKey = getch();
 
 	while(inputKey != 113) {
-		inputKey = getch();
 		printw(": [KEY #%i PRESSED] ", inputKey);
+		inputKey = getch();
 	}
 
 	endwin();
