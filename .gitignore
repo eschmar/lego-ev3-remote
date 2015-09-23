@@ -30,3 +30,9 @@
 
 # Debug files
 *.dSYM/
+
+# Project specific
+sound/
+ev3dev.cpp
+ev3dev.h
+lego-ev3-remote
