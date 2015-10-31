@@ -12,7 +12,20 @@ int main() {
 	const int KEY_F = 102;
 	const int KEY_Q = 113;
 	const int KEY_R = 114;
-
+	
+	const int NOTE_C = 262;
+	const int NOTE_CS = 277;
+	const int NOTE_D = 294;
+	const int NOTE_DS = 311;
+	const int NOTE_E = 330;
+	const int NOTE_F = 349;
+	const int NOTE_FS = 370;
+	const int NOTE_G = 392;
+	const int NOTE_GS = 415;
+	const int NOTE_A = 440;
+	const int NOTE_AS = 466;
+	const int NOTE_B = 494;
+	
 	initscr();
 	raw();
 	keypad(stdscr, TRUE);
@@ -28,13 +41,13 @@ int main() {
 			sound::beep();
 			
 		}else if (inputKey == KEY_A) {
-			sound::tone(262,180);
+			sound::tone(NOTE_C, 180);
 		}else if (inputKey == KEY_S) {
-			sound::tone(392,180);
+			sound::tone(NOTE_G, 180);
 		}else if (inputKey == KEY_D) {
-			sound::tone(440,180);
+			sound::tone(NOTE_A, 180);
 		}else if (inputKey == KEY_F) {
-			sound::tone(262,400);
+			sound::tone(NOTE_C, 400);
 		}
 		
 		inputKey = getch();
