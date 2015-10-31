@@ -29,7 +29,7 @@ int main() {
 	initscr();
 	raw();
 	keypad(stdscr, TRUE);
-	mvprintw(1,2,"Hello world :) Press Q to quit. ");
+	mvprintw(1, 2, "Enabled keys = {A,S,D,F,R,Q}. Press Q to quit. ");
 
 	noecho();
 	inputKey = getch();
