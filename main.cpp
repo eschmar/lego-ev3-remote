@@ -15,6 +15,7 @@ int main() {
 
 	initscr();
 	raw();
+	keypad(stdscr, TRUE);
 	mvprintw(1,2,"Hello world :) Press Q to quit. ");
 
 	noecho();
